@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seducción - Lenceria y Pijamas </title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <!-- Menu de navegacion -->
+   <div class="container-navbar">
+
+    <nav class="navbar">
+     <!-- Botón hamburguesa -->
+     <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+     <label for="menu-toggle" class="menu-toggle-label">☰</label>
+
+
+     <!-- Menú mobile que se despliega -->
+     <div class="mobile-menu">
+      <nav class="mobile-nav">
+       <div class="menu-productos-mobile">
+         <a href="#">PRODUCTOS        > </a>
+         <div class="dropdown-mobile">
+          <a href="todos_los_productos.html">Todos los productos</a>
+          <a href="pantuflas.html">Pantuflas</a>
+          <a href="conjuntos.html">Conjuntos</a>
+          <a href="corpinos.html">Corpiños</a>
+          <a href="bombachas.html">Bombachas</a>
+          <a href="trajes_de_bano.html">Trajes de Baño</a>
+          <a href="bodies_y_tops.html">Bodies y Tops</a>
+          <a href="medias.html">Medias</a>
+          <a href="batas.html">Batas</a>
+          <a href="deporte.html">Deporte</a>
+          <a href="pijamas.html">Pijamas</a>
+          <a href="gift_card.html">Gift Cards</a>
+         </div>
+       </div>
+       <a href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a>
+       <a href="#CONTACTO">CONTACTO</a>
+       <a href="#AYUDA">AYUDA</a>
+       <a href="#INICIAR_SESION">INICIAR SESIÓN</a>
+      </nav>
+     </div>
+
+     <!-- Logo -->
+     <img src="img/logo_seduccion.svg" alt="Logo Seducción negro" class="logo">
+     
+     <!-- iconos mobile -->
+     <div class="nav-icons-mobile">
+      <img src="img/icon_buscar.svg" alt="Buscar">
+      <img src="img/icon_carrito.svg" alt="Carrito">
+     </div>
+
+     <!-- Menú desktop -->
+     <div class="nav-links" id="nav-links">  
+     <div class="menu-productos">
+        <a href="#" class="texto-menu">PRODUCTOS</a>
+        <div class="dropdown">
+          <a href="todos_los_productos.html">Todos los productos</a>
+          <a href="pantuflas.html">Pantuflas</a>
+          <a href="conjuntos.html">Conjuntos</a>
+          <a href="corpinos.html">Corpiños</a>
+          <a href="bombachas.html">Bombachas</a>
+          <a href="trajes_de_bano.html">Trajes de Baño</a>
+          <a href="bodies_y_tops.html">Bodies y Tops</a>
+          <a href="medias.html">Medias</a>
+          <a href="batas.html">Batas</a>
+          <a href="deporte.html">Deporte</a>
+          <a href="pijamas.html">Pijamas</a>
+          <a href="gift_card.html">Gift Cards</a>
+        </div>
+      </div>
+      <a href="#SOBRE_NOSOTROS" class="texto-menu">SOBRE NOSOTROS</a>
+      <a href="#CONTACTO" class="texto-menu">CONTACTO</a>
+      
+      <div class="nav-icons"> 
+        <img src="img/icon_buscar.svg" alt="Buscar">
+        <img src="img/icon_ayuda.svg" alt="Ayuda" class="icono_menu">
+        <img src="img/icon_carrito.svg" alt="Carrito">
+        <a href="#INICIAR_SESION" class="texto-menu">
+          <img src="img/icono_user.svg" alt="Usuario"> INICIAR SESIÓN
+        </a>
+      </div>
+
+     </nav>
+
+    </div>
+  </header>
+  <main>
+    <!-- Carrousel -->
+    <div class="container-carousel">
+     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+       <!-- indicadores -->
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- contenido -->
+      <div class="carousel-inner">
+
+       <div class="carousel-item active">
+         <img src="img/carousel_1_sweetwinter.svg" class="d-block w-100" alt="...">
+       </div>
+
+       <div class="carousel-item">
+        <img src="img/carousel_2_nightout.svg" class="d-block w-100" alt="...">
+       </div>
+
+       <div class="carousel-item">
+        <img src="img/carousel_3_giftcard.svg" class="d-block w-100" alt="...">
+       </div>
+
+      </div>
+      
+      <!-- controles -->
+
+      <!-- ***************** ver porque no se mueve como deberian las flechas **************************-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"><img class="icon-control" src="img/icon-back.svg"></span> 
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+       <span class="carousel-control-next-icon"><img class="icon-control" src="img/icon-next.svg"></span>
+       <span class="visually-hidden">Next</span>
+      </button>
+
+     </div>  
+    </div>
+
+  <!-- envio a todo el pais -->
+  
+   <div class="envios-banner">
+      <div class="envios-texto">
+         <span> <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    </span> 
+         <span> <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    </span> 
+         <span> <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    <img class="envio" src="img/icon_camion.svg">    Envíos en todo el país    </span> 
+        </div>
+    </div>
+
+  <!-- categorias -->
+     <section class="categorias">
+      
+      <div class="container">
+         <h2 class="text-center mb-4">Categorías</h2>
+         <div class="categorias-scroll">
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_pantuflas.svg" alt="Pantuflas">
+             <p>Pantuflas</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_conjuntos.svg" alt="Conjuntos">
+             <p>Conjuntos</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_corpinos.svg" alt="Corpiños">
+             <p>Corpiños</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_bombachas.svg" alt="bombachas">
+             <p>Bombachas</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_traje_de_bano.svg" alt="Trajes de Baño">
+             <p>Trajes de Baño</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_tops.svg" alt="Bodies y tops">
+             <p>Bodies y Tops</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_medias.svg" alt="Medias">
+             <p>Medias</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_batas.svg" alt="Batas">
+             <p>Batas</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_deporte.svg" alt="Deporte">
+             <p>Deporte</p>
+           </div>
+
+           <div class="categoria-item text-center">
+             <img src="img/categoria_pijamas.svg" alt="Pijamas">
+             <p>Pijamas</p>
+           </div>
+      
+         </div>
+      </div>
+   </section>
+
+   <!-- productos destacados -->
+   <section class="productos-destacado py-5">
+     <div class="container">
+       <h2 class="titulo-seccion text-center mb-4">Productos destacados</h2>
+       <div class="productos-grid">
+
+         <div class="producto-card">
+           <img src="img/producto_destacado_1.svg" alt="Set X3 Print">
+           <div class="info-producto">
+             <h3>Set X3 Print</h3>
+             <p class="precio">$60.000</p>
+             <button class="btn-agregar">Más detalles</button>
+           </div>
+         </div>
+
+         <div class="producto-card">
+           <img src="img/producto_destacado_2.svg" alt="Traje de baño Lover">
+           <div class="info-producto">
+             <h3>Traje de baño Lover</h3>
+             <p class="precio">$40.000</p>
+             <button class="btn-agregar">Más detalles</button>
+           </div>
+         </div>
+
+         <div class="producto-card">
+           <img src="img/producto_destacado_3.svg" alt="Pantuflas Teddy">
+           <div class="info-producto">
+             <h3>Pantuflas Teddy</h3>
+             <p class="precio">$32.000</p>
+             <button class="btn-agregar">Más detalles</button>
+           </div>
+         </div>
+
+         <div class="producto-card">
+          <img src="img/producto_destacado_4.svg" alt="Bata Berries">
+          <div class="info-producto">
+             <h3>Bata Berries</h3>
+             <p class="precio">$48.500</p>
+             <button class="btn-agregar">Más detalles</button>
+          </div>
+         </div>
+
+      </div>
+
+      <div class="ver-todos text-center mt-4">
+       <a href="#" class="ver-link">Ver todos los productos</a>
+      </div>
+     </div>
+   </section>
+
+   <!-- encontra tu match -->
+   
+
+
+    <section class="match-section py-5">
+     <div class="container text-center">
+       <h2 class="titulo-match">Encontrá tu match</h2>
+
+       <!-- Carrusel de corpiños -->
+
+      <div id="carouselCorpiños" class="carousel slide carousel-corpiños">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/match_1.svg" class="d-block w-100" alt="Corpiño 1">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_2.svg" class="d-block w-100" alt="Corpiño 2">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_3.svg" class="d-block w-100" alt="Corpiño 3">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_4.svg" class="d-block w-100" alt="Corpiño 4">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_5.svg" class="d-block w-100" alt="Corpiño 5">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_6.svg" class="d-block w-100" alt="Corpiño 6">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_7.svg" class="d-block w-100" alt="Corpiño 7">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_8.svg" class="d-block w-100" alt="Corpiño 8">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_9.svg" class="d-block w-100" alt="Corpiño 9">
+          </div>
+
+          <div class="carousel-item">
+            <img src="IMG/match_10.svg" class="d-block w-100" alt="Corpiño 10">
+          </div>
+       </div>
+       <div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselCorpiños" data-bs-slide="prev">
+          <img src="img/icon_arrow_back.svg" class="flecha-control" alt="Anterior">
+         </button>
+
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselCorpiños" data-bs-slide="next">
+          <img src="img/icon_arrow_next.svg" class="flecha-control" alt="Siguiente">
+         </button>
+      </div>
+
+
+     <!-- Carrusel de bombachas -->
+     <div id="carouselBombachas" class="carousel slide carousel-bombachas" data-bs-ride="carousel">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/match_11.svg" class="d-block w-100" alt="Bombacha 1">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/match_12.svg" class="d-block w-100" alt="Bombacha 2">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/match_13.svg" class="d-block w-100" alt="Bombacha 3">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/match_14.svg" class="d-block w-100" alt="Bombacha 4">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/match_15.svg" class="d-block w-100" alt="Bombacha 5">
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/match_16.svg" class="d-block w-100" alt="Bombacha 6">
+        </div>
+
+       </div>
+
+       <button class="carousel-control-prev" type="button" data-bs-target="#carouselBombachas" data-bs-slide="prev">
+        <img src="img/icon_arrow_back.svg" class="flecha-control" alt="Anterior">
+       </button>
+
+       <button class="carousel-control-next" type="button" data-bs-target="#carouselBombachas" data-bs-slide="next">
+        <img src="img/icon_arrow_next.svg" class="flecha-control" alt="Siguiente">
+       </button>
+
+      </div>
+
+    <!-- Botón de compra -->
+      <a href="#" class="btn-comprar">Comprar ahora</a>
+     </div>
+    </section>
+
+    <!-- pijamada colections -->
+
+    <section class="pijamada-section py-5">
+      <div class="container">
+       <h2 class="titulo-seccion text-center mb-5">Pijamada Collections</h2>
+
+         <div class="colecciones-grid">
+
+          <!-- Breakfast Club -->
+          <div class="coleccion-item breakfast">
+           <img src="img/breakfastclub.svg" alt="Breakfast Club">
+           <a href="#" class="btn-vermas">Ver más</a>
+          </div>
+
+          <!-- Satin Fun -->
+          <div class="coleccion-item satin">
+           <img src="img/satinfun.svg" alt="Satin Fun">
+           <a href="#" class="btn-vermas">Ver más</a>
+          </div>
+
+         </div>
+  </div>
+  </section>
+
+ </main>
+ <footer class="footer">
+  <div class="container-footer">
+
+    <!-- Secciones de enlaces -->
+    <div class="footer-columns">
+
+      <div class="footer-column">
+        <h4>Información</h4>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="#">Guía de Talles</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Mi cuenta</h4>
+        <ul>
+          <li><a href="#">Mis pedidos</a></li>
+          <li><a href="#">Ingresar</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Ayuda</h4>
+        <ul>
+          <li><a href="#">Cómo Comprar</a></li>
+          <li><a href="#">Preguntas Frecuentes</a></li>
+          <li><a href="#">Envíos</a></li>
+          <li><a href="#">Cambios y devoluciones</a></li>
+          <li><a href="#">Me Arrepentí</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Métodos de envío</h4>
+        <ul>
+          <li><a href="#">Correo Argentino</a></li>
+          <li><a href="#">Oca</a></li>
+          <li><a href="#">Vía Cargo</a></li>
+          <li><a href="#">Andreani</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Medios de pago</h4>
+        <ul>
+          <li><a href="#">Visa</a></li>
+          <li><a href="#">Mastercard</a></li>
+          <li><a href="#">Mercado Pago</a></li>
+          <li><a href="#">Pago Fácil</a></li>
+          <li><a href="#">American Express</a></li>
+          <li><a href="#">Cabal</a></li>
+          <li><a href="#">Naranja</a></li>
+          <li><a href="#">Transferencias</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Seguinos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="img/facebook.svg" alt="Facebook"></a>
+          <a href="#"><img src="img/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="img/whatsapp.svg" alt="WhatsApp"></a>
+          <a href="#"><img src="img/tiktok.svg" alt="Tiktok"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Derechos reservados -->
+    <div class="footer-bottom">
+      <p>Todos los derechos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+</html>
