@@ -395,4 +395,141 @@
   font-size: 1rem;
 }
 
+.match-section {
+  background-color: #F0ED98;
+  padding: 40px 20px;
+  text-align: center;
+}
+.match-section .container-match .titulo-match {
+  font-family: "Times New Roman", Times, serif;
+  color: #d57093;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2 rem;
+  margin-bottom: 30px;
+}
+.match-section .container-match .carousel-item img {
+  max-height: 300px;
+  object-fit: contain;
+  padding-bottom: 30px;
+}
+.match-section .btn-comprar {
+  background-color: #d57093;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1 rem;
+  transition: background-color 0.5 ease;
+}
+.match-section .btn-comprarhover {
+  background-color: #ffcdc6;
+}
+.match-section .carouselBombachasFade .carouselCorpinosFade .carousel-control-prev {
+  left: 10px;
+}
+.match-section .carouselBombachasFade .carouselCorpinosFade .carousel-control-next {
+  right: 10px;
+}
+
+.pijamada-section {
+  background-color: #FCE8E3;
+  padding: 40px 20px;
+}
+.pijamada-section .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.pijamada-section .titulo-seccion {
+  font-family: "Times New Roman", Times, serif;
+  color: #d57093;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2 rem;
+}
+.pijamada-section .colecciones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: clamp(20px, 5vw, 60px);
+  justify-items: center;
+  align-items: start;
+}
+.pijamada-section .coleccion-item {
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.pijamada-section .coleccion-item:hover {
+  transform: scale(1.03);
+}
+.pijamada-section .coleccion-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.pijamada-section .coleccion-item .btn-vermas {
+  background-color: #d9b2e3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1 rem;
+  transition: background-color 0.5 ease;
+}
+.pijamada-section .coleccion-item .btn-vermashover {
+  background-color: #8b6bb8;
+}
+
+.footer {
+  background-color: #ffcdc6;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+.footer .container-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.footer .footer-columns .footer-column h4 {
+  font-size: 1rem;
+  color: #d57093;
+  margin-bottom: 10px;
+}
+.footer .footer-columns .footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-columns .footer-column ul li {
+  margin-bottom: 8px;
+}
+.footer .footer-columns .footer-column ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+}
+.footer .footer-columns .footer-column ul li a:hover {
+  color: #d57093;
+}
+.footer .social-icons a {
+  margin-right: 10px;
+}
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+.footer .footer-bottom {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+}
+
 /*# sourceMappingURL=main.css.map */
