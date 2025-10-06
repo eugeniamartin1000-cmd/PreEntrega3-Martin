@@ -37,5 +37,25 @@
     font-size: 2 rem;
 }
 
+@mixin top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  .top-section a{
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+  }
 
+  .filtro img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    align-items: right;
+  }
+}
+
+/* categorias todos los productos*/
 

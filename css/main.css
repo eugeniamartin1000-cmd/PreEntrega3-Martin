@@ -1,3 +1,4 @@
+/* categorias todos los productos*/
 .container-navbar {
   padding: 15px;
   background-color: #ffcdc6;
@@ -530,6 +531,32 @@
   text-align: center;
   font-size: 0.8rem;
   color: #666;
+}
+
+/*todos los productos*/
+.todos-los-productos {
+  background-color: #fce8e3;
+  padding: 50px;
+}
+.todos-los-productos .top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todos-los-productos .top-section .top-section a {
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+.todos-los-productos .top-section .filtro img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  align-items: right;
+}
+.todos-los-productos .top-section {
+  color: #d57093;
 }
 
 /*# sourceMappingURL=main.css.map */

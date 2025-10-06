@@ -584,3 +584,17 @@
   }
 }
 
+/*todos los productos*/
+
+.todos-los-productos{
+    background-color: $light-pink-color;
+    padding: 50px;
+
+    .top-section{
+        @include top;
+        color: $hot-pink-color;
+    }
+}
+
+
+
