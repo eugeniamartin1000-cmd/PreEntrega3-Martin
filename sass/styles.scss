@@ -12,155 +12,196 @@ body, html, header {
 
 // ************************HEADER**********************************
 
-
-
-// Contenedor principal del header
-
-
-.navbar,
-.container-navbar,
-.container-fluid {
-  background-color: $pink-color !important;
-}
-
-.navbar{
-    background-color: $pink-color;
-}
 .container-navbar {
-  
-  padding: 10px 30px;
-  min-height: 80px;
-  border: none;
+  padding: 15px;
   background-color: $pink-color;
+}
 
-  .container-fluid{
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  max-height: 80vh;
+}
 
-    margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    background-color: $pink-color;
-    margin: 0;
-  }
+// Ícono hamburguesa con checkbox
+.menu-toggle-checkbox {
+  display: none;
+}
 
-  .logo {
-    max-height: 50px;
+.menu-toggle-label {
+  font-size: 28px;
+  cursor: pointer;
+  color: $hot-pink-color;
+  display: none;
+
+  @media (max-width: 1092px) {
     display: block;
+    position: relative;
+    z-index: 1001;
+    padding: 10px;
   }
+}
 
-  .navbar-toggler {
-    border: none;
-    background-color: transparent;
-  }
+// Menú mobile oculto por defecto
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: $light-pink-color;
+  padding: 40px 20px;
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
 
-  .navbar-nav {
+  .mobile-nav {
     display: flex;
-    align-items: center;
-    gap: 80px;
-
-    .nav-item {
-      display: flex;
-      align-items: center;
-
-      .nav-link {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        @include main-text(black, 16px);
-        font-weight: 500;
-        text-transform: uppercase;
-        text-decoration: none;
-        background-color: transparent;
-        border: none;
-
-        &:hover {
-          color: $hot-pink-color;
-        }
-
-        img {
-          height: 28px;
-          display: block;
-        }
-
-        span {
-          font-size: 14px;
-          font-weight: 500;
-        }
-      }
-    }
-
-    // INICIAR SESIÓN con ícono
-    .texto-menu {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-
-      img {
-        height: 28px;
-      }
-
-      &:hover {
-        color: $hot-pink-color;
-      }
-    }
-  }
-
-  // Íconos a la derecha
-  .nav-icons {
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
 
     a {
-      display: flex;
-      align-items: center;
+      @include main-text($hot-pink-color, 16px);
+      text-decoration: none;
 
-      img {
-        height: 28px;
-        display: block;
-        transition: transform 0.3s ease;
-
-        &:hover {
-          transform: scale(1.1);
-        }
+      &:hover {
+        color: $pink-color;
       }
     }
+  }
+}
 
-    @media (max-width: 1092px) {
-      margin-top: 20px;
-      justify-content: flex-end;
+// Activar menú mobile
+@media (max-width: 1092px) {
+  .menu-toggle-checkbox:checked + .menu-toggle-label + .mobile-menu {
+    transform: translateX(0);
+  }
+}
+
+// Logo
+.logo {
+  height: 40px;
+
+  @media (max-width: 1092px) {
+    display: block;
+    margin: 0 auto;
+    padding-left: 30px;
+  }
+}
+
+// Iconos mobile
+.nav-icons-mobile {
+  display: none;
+
+  @media (max-width: 1092px) {
+    @include flex-center;
+    gap: 15px;
+  }
+}
+
+// Links desktop
+.nav-links {
+  @include flex-center;
+  gap: 80px;
+  flex: 1;
+
+  @media (max-width: 1092px) {
+    display: none;
+  }
+}
+
+// Iconos desktop
+.nav-icons {
+  @include flex-center;
+  gap: 15px;
+
+  @media (max-width: 1092px) {
+    margin-top: 20px;
+    padding-right: 0;
+    justify-content: right;
+  }
+}
+
+// Texto de navegación
+.texto-menu {
+  @include main-text(black, 16px);
+  font-weight: 400;
+
+  &:hover {
+    color: $hot-pink-color;
+  }
+
+  @media (max-width: 1092px) {
+    display: none;
+  }
+}
+
+
+
+// Dropdown productos
+.menu-productos {
+  position: relative;
+  display: inline-block;
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $light-pink-color;
+    min-width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+
+    a {
+      display: block;
+      padding: 10px 15px;
+      @include main-text($hot-pink-color, 14px);
+
+      &:hover {
+        color: $pink-color;
+      }
     }
   }
 
-  // Dropdown productos
-  .menu-productos {
-    position: relative;
+  &:hover .dropdown {
+    display: flex;
+  }
+}
 
-    .dropdown {
+//dropdown productos mobile
+
+.menu-productos-mobile {
+  position: relative;
+
+
+    .dropdown-mobile {
       display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: $light-pink-color;
-      min-width: 180px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
       flex-direction: column;
+      background-color: $light-pink-color;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
 
       a {
-        display: block;
-        padding: 10px 15px;
-        @include main-text($hot-pink-color, 14px);
+       display: block;
+       padding: 10px 15px;
+       font-weight: 500;
+       cursor: pointer;
+      
 
         &:hover {
-          color: $pink-color;
+         color: $pink-color;
         }
       }
-    }
+      }
 
-    &:hover .dropdown {
-      display: flex;
-    }
-  }
+       &:hover .dropdown-mobile {
+        display: flex;
+       }
 }
 
 // ************************MAIN**********************************

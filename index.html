@@ -14,61 +14,88 @@
 <body>
   
   <header>
-  <div class="container-navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <!-- Menu de navegacion -->
+   <div class="container-navbar">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo-container">
-          <img src="img/logo_seduccion.svg" alt="Logo Seducción negro" class="logo">
-        </a>
+    <nav class="navbar">
+     <!-- Botón hamburguesa -->
+     <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+     <label for="menu-toggle" class="menu-toggle-label">☰</label>
 
-        <!-- Botón hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <!-- Menú principal -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <!-- Dropdown productos -->
-            <li class="nav-item dropdown menu-productos">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PRODUCTOS</a>
-              <ul class="dropdown-menu dropdown">
-                <li><a class="dropdown-item" href="todos_los_productos.html">Todos los productos</a></li>
-                <li><a class="dropdown-item" href="pantuflas.html">Pantuflas</a></li>
-                <li><a class="dropdown-item" href="conjuntos.html">Conjuntos</a></li>
-                <li><a class="dropdown-item" href="corpinos.html">Corpiños</a></li>
-                <li><a class="dropdown-item" href="bombachas.html">Bombachas</a></li>
-                <li><a class="dropdown-item" href="trajes_de_bano.html">Trajes de Baño</a></li>
-                <li><a class="dropdown-item" href="bodies_y_tops.html">Bodies y Tops</a></li>
-                <li><a class="dropdown-item" href="medias.html">Medias</a></li>
-                <li><a class="dropdown-item" href="batas.html">Batas</a></li>
-                <li><a class="dropdown-item" href="deporte.html">Deporte</a></li>
-                <li><a class="dropdown-item" href="pijamas.html">Pijamas</a></li>
-                <li><a class="dropdown-item" href="gift_card.html">Gift Cards</a></li>
-              </ul>
-            </li>
+     <!-- Menú mobile que se despliega -->
+     <div class="mobile-menu">
+      <nav class="mobile-nav">
+       <div class="menu-productos-mobile">
+         <a href="#">PRODUCTOS        > </a>
+         <div class="dropdown-mobile">
+          <a href="todos_los_productos.html">Todos los productos</a>
+          <a href="pantuflas.html">Pantuflas</a>
+          <a href="conjuntos.html">Conjuntos</a>
+          <a href="corpinos.html">Corpiños</a>
+          <a href="bombachas.html">Bombachas</a>
+          <a href="trajes_de_bano.html">Trajes de Baño</a>
+          <a href="bodies_y_tops.html">Bodies y Tops</a>
+          <a href="medias.html">Medias</a>
+          <a href="batas.html">Batas</a>
+          <a href="deporte.html">Deporte</a>
+          <a href="pijamas.html">Pijamas</a>
+          <a href="gift_card.html">Gift Cards</a>
+         </div>
+       </div>
+       <a href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a>
+       <a href="#CONTACTO">CONTACTO</a>
+       <a href="#AYUDA">AYUDA</a>
+       <a href="#INICIAR_SESION">INICIAR SESIÓN</a>
+      </nav>
+     </div>
 
-            <!-- Enlaces simples -->
-            <li class="nav-item"><a class="nav-link texto-menu" href="#SOBRE_NOSOTROS">SOBRE NOSOTROS</a></li>
-            <li class="nav-item"><a class="nav-link texto-menu" href="#CONTACTO">CONTACTO</a></li>
-            <li class="nav-icon"><a href="#"><img src="img/icon_buscar.svg" alt="Buscar"></a></li>
-            <li class="nav-icon"><a href="#"><img src="img/icon_ayuda.svg" alt="Ayuda"></a></li>
-            <li class="nav-icon"><a href="#"><img src="img/icon_carrito.svg" alt="Carrito"></a></li>
-            <li class="nav-item"><a class="nav-link texto-menu" href="#INICIAR_SESION"><img src="img/icono_user.svg" alt="Usuario"> INICIAR SESIÓN</a></li>
-          </ul>
-         
+     <!-- Logo -->
+     <img src="img/logo_seduccion.svg" alt="Logo Seducción negro" class="logo">
+     
+     <!-- iconos mobile -->
+     <div class="nav-icons-mobile">
+      <img src="img/icon_buscar.svg" alt="Buscar">
+      <img src="img/icon_carrito.svg" alt="Carrito">
+     </div>
+
+     <!-- Menú desktop -->
+     <div class="nav-links" id="nav-links">  
+     <div class="menu-productos">
+        <a href="#" class="texto-menu">PRODUCTOS</a>
+        <div class="dropdown">
+          <a href="todos_los_productos.html">Todos los productos</a>
+          <a href="pantuflas.html">Pantuflas</a>
+          <a href="conjuntos.html">Conjuntos</a>
+          <a href="corpinos.html">Corpiños</a>
+          <a href="bombachas.html">Bombachas</a>
+          <a href="trajes_de_bano.html">Trajes de Baño</a>
+          <a href="bodies_y_tops.html">Bodies y Tops</a>
+          <a href="medias.html">Medias</a>
+          <a href="batas.html">Batas</a>
+          <a href="deporte.html">Deporte</a>
+          <a href="pijamas.html">Pijamas</a>
+          <a href="gift_card.html">Gift Cards</a>
         </div>
       </div>
-    </nav>
-  </div>
- </header>
+      <a href="#SOBRE_NOSOTROS" class="texto-menu">SOBRE NOSOTROS</a>
+      <a href="#CONTACTO" class="texto-menu">CONTACTO</a>
+      
+      <div class="nav-icons"> 
+        <img src="img/icon_buscar.svg" alt="Buscar">
+        <img src="img/icon_ayuda.svg" alt="Ayuda" class="icono_menu">
+        <img src="img/icon_carrito.svg" alt="Carrito">
+        <a href="#INICIAR_SESION" class="texto-menu">
+          <img src="img/icono_user.svg" alt="Usuario"> INICIAR SESIÓN
+        </a>
+      </div>
 
+     </nav>
+
+    </div>
+  </header>
 
   
-
-
   <main>
     <!-- Carrousel -->
     <div class="container-carousel">
